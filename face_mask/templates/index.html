@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    {% load static %}
+  <meta charset="UTF-8">
+  <title>Face Mask Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css'>
+<link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-transparent" color-on-scroll="500">
+        <div class="container">
+            <div class="navbar-translate">
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'index' %}"><img class="logo" src="{% static 'logo.png' %}"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Navigate to Home" data-placement="bottom" href="{% url 'index' %}">
+                            <i class="fa fa-home"></i>
+                            <p class="hidden-lg-up">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="About Our Company" data-placement="bottom" href="{% url 'about' %}">
+                            <i class="fa fa-info"></i>
+                            <p class="hidden-lg-up">About Us</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Record Data Without Mask" data-placement="bottom" href="{% url 'training_without_mask'%}">
+                            <i class="fa fa-smile-o"></i>
+                            <p class="hidden-lg-up">Record Data Without Mask</p>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Record Data With Mask" data-placement="bottom" href="{% url 'training_with_mask'%}">
+                            <i class="fa fa-angellist"></i>
+                            <p class="hidden-lg-up">Record Data With Mask</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Start Detection" data-placement="bottom" href="{% url 'detection'%}">
+                            <i class="fa fa-video-camera"></i>
+                            <p class="hidden-lg-up">Start Detection</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Connect With Us" data-placement="bottom" href="{% url 'contact' %}">
+                            <i class="fa fa-phone"></i>
+                            <p class="hidden-lg-up">Contact Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="page-header section-dark" style="background-image: url('{% static 'bg.png' %}')">
+            <div class="filter"></div>
+    		<div class="content-center">
+    			<div class="container">
+    				<div class="title-brand">
+    					<h1 class="presentation-title">Face Mask</h1>
+    				</div>
+
+    				<h2 class="presentation-subtitle text-center">Detection</h2>
+    			</div>
+    		</div>
+            </div>
+    	</div>
+  </div>
+</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+</body>
+</html>

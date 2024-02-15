@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static 'style_contact.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
+</head>
+<body>
+<html>
+<head>
+<title>Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+  <div class="box">
+    <div class="logo">
+      <a class="navbar-brand" href="{% url 'index' %}"><img class = "logo" src="{% static 'logo.png' %}"/></a>
+    </div>
+    <div class="text">
+    <h1>Contact <span class="red">Us</span></h1>
+    <hr class="redline">
+    <p>Have Questions ? We have answers ( may be )</p>
+    </div>
+  </div>
+
+  <div class="touch">
+    <h2>Get in touch</h2>
+    <hr class="redline">
+  </div>
+  <!--address-->
+
+  <div class="container address">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <h3>Our Address</h3>
+      <div class="redline-address"></div>
+      <p>Dewan Institute Of Management Studies</p>
+      <p>NH-58</p>
+      <p>Partapur-Bypass</p>
+      <p>Meerut - 250001</p>
+      <div class="phone-e">
+      <p><span class="glyphicon glyphicon-envelope"> </span> mca@dewaninstitutes.org</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91-74589 48597</p>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <!--map-->
+      <img src="https://www.w3schools.com/w3images/map.jpg" width="600" height="450"/>
+
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+
+  </div>
+  
+  <div class="bottom-gap"></div>
+  
+</body>
+</html>
+  
+</body>
+</html>

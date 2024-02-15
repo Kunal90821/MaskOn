@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   {% load static %}
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="{% static 'style_about.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
+</head>
+<body>
+<div class="header" style="background-image: url('{% static 'about.jpg' %}')">
+<div class="box">
+    <div class="logo">
+      <a class="navbar-brand" href="{% url 'index' %}"><img class = "logo" src="{% static 'logo.png' %}"/></a>
+    </div>
+</div>
+
+<div class="container">
+   
+   <div class="about">
+      <div class="left">
+         <h1>About us</h1>
+         <hr>
+         <p>The world has not yet fully Recover from this pandemic and the vaccine that can effectively treat Covid-19 is yet to be discovered. However, to reduce the impact of the pandemic on the country's economy, several governments have allowed a limited number of economic activities to be resumed once the number of new cases of Covid19 has dropped below a certain level. As these countries cautiously restarting their economic activities, concerns have emerged regarding workplace safety in the new post-Covid-19 environment.</p>
+
+                  <p>To reduce the possibility of infection, it is advised that people should wear masks and maintain a distance of at least 1 meter from each other. Deep learning has gained more attention in object detection and was used for human detection purposes and develop a face mask detection tool that can detect whether the individual is wearing mask or not. This can be done by evaluation of the classification results by analysing real-time streaming from the Camera. In deep learning projects, we need a training data set. It is the actual dataset used to train the model for performing various actions.</p>
+
+      </div>
+      <div class="right">
+         <img src="{% static 'mask.jpg' %}">
+      </div>
+      <div class="clear"></div>
+   </div>
+   
+   
+   
+</div>  
+</body>
+</html>
